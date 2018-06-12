@@ -1,0 +1,33 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.table-of-contents {
+    position: sticky;
+    top: 20px;
+}
+
+.helpful {
+    margin-top: 20px;
+    background-color: #e9ecef;
+    width: 100%;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+}
+
+.helpful-label, #helpful-icon-yes, #helpful-icon-no {
+    font-size: 30px;
+}
+
+#helpful-icon-yes, #helpful-icon-no {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+#helpful-icon-yes:hover {
+    color: green;
+}
+
+#helpful-icon-no:hover {
+    color: #A70000;
+}

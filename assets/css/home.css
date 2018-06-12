@@ -1,0 +1,65 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    height: 50vh;
+    padding-top: 25vh;
+    text-align: center;
+    margin-bottom: 0;
+    background-color: #2097ff;
+    color: white !important;
+    border-radius: 0;
+}
+
+#search-homepage {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+
+.curve {
+    border-radius: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 80px;
+    color: white;
+    background-color: #2097ff;
+}
+
+.white {
+    color: white;
+}
+
+.top-cards {
+    margin-top: -150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.top-card {
+    background-color: white;
+    height: 200px;
+    text-align: center;
+}
+
+.card-container {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.top-card-icon {
+    font-size: 50px;
+    padding-bottom: 5px;
+}
+
+.top-card-title {
+    padding-bottom: 5px;
+}
+
+.card {
+    padding: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 5px #88888871;
+    margin-top: 20px;
+}
