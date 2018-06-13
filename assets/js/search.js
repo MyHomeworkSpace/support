@@ -1,4 +1,9 @@
 $(() => {
+    $('#nav-search').submit(function () {
+        location.href = "/search?query=" + $("#nav-searchbar").val();
+        return false;
+    });
+    
     const search = instantsearch({
         appId: 'QF9EIEIPVJ',
         apiKey: '850274baea92c3bf75c0f515e519bbf2',

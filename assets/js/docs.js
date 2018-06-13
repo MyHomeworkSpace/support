@@ -1,4 +1,9 @@
 $(()=>{
+    $('#nav-search').submit(function () {
+        location.href = "/search?query=" + $("#nav-searchbar").val();
+        return false;
+    });
+    
     $("h2, h3, h4, h5, h6").each(function(index) {
         if($(this).attr('id') != "title") {
             var level = $(this).prop('nodeName').replace("H","")-2
