@@ -26,8 +26,11 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
+url: help.myhomework.space
+
+algolia:
+  application_id: QF9EIEIPVJ
+  index_name:     site # You can replace that with whatever name you want
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

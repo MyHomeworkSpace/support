@@ -13,16 +13,19 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="assets/js/home.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
 </head>
 
 <body>
     <nav class="navbar navbar-dark" style="background-color: #2097ff;">
         <a class="navbar-brand" style="color: white">MyHomeworkSpace Support</a>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+        <form class="form-inline" id="nav-search">
+            <input class="form-control mr-sm-2" id="nav-searchbar" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" id="navSubmit" type="submit">
                 <i class="fas fa-search"></i>
             </button>
         </form>
@@ -30,8 +33,15 @@
     <div class="jumbotron fluid header">
         <h1 class="display-5">Welcome to MyHomeworkSpace Support</h1>
         <p class="lead white">We're here to help!</p>
-        <div class="form-group">
-            <input class="form-control" placeholder="Search" id="search-homepage" type="text">
+        <div class="search-homepage-wrapper">
+            <form class="form-inline" id="homepage-search">
+                <div class="search-homepage-wrapper">
+                    <input class="form-control" placeholder="Search" id="home-searchbar" type="text">
+                    <button class="btn btn-outline-light my-2 my-sm-0" id="homepageSubmit" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
     <div class="jumbotron curve fluid"></div>
@@ -60,21 +70,21 @@
             </div>
         </div>
         <div class="row">
-        <div class="col-md-6 card-container">
-            <div class="card top-card">
-                <i class="lead top-card-icon fas fa-server"></i>
-                <a class="lead top-card-title" href="https://status.myhw.space">System Status</a>
-                <p>See if MyHomeworkSpace is down for everyone, or just you</p>
+            <div class="col-md-6 card-container">
+                <div class="card top-card">
+                    <i class="lead top-card-icon fas fa-server"></i>
+                    <a class="lead top-card-title" href="https://status.myhw.space">System Status</a>
+                    <p>See if MyHomeworkSpace is down for everyone, or just you</p>
+                </div>
+            </div>
+            <div class="col-md-6 card-container">
+                <div class="card top-card">
+                    <i class="lead top-card-icon far fa-smile"></i>
+                    <a class="lead top-card-title" href="#">Getting Started</a>
+                    <p>Learn the basics of MyHomeworkSpace</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-6 card-container">
-            <div class="card top-card">
-                <i class="lead top-card-icon far fa-smile"></i>
-                <a class="lead top-card-title" href="#">Getting Started</a>
-                <p>Learn the basics of MyHomeworkSpace</p>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>

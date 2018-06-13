@@ -12,9 +12,13 @@ body {
     border-radius: 0;
 }
 
-#search-homepage {
-    width: 30%;
+#home-searchbar {
+    width: 30vw;
     text-align: center;
+    margin: auto;
+}
+
+.search-homepage-wrapper {
     margin: auto;
 }
 

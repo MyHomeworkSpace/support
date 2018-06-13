@@ -3,6 +3,7 @@ layout: docs
 title: Getting Started
 icon: far fa-smile
 author: William Barkoff
+description: Get started with MyHomeworkSpace
 ---
 <div class="card" style="box-shadow: 3px 3px 5px #88888871; padding: 10px 10px 10px 10px">
 <div class="row">
