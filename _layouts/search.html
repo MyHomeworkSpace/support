@@ -17,41 +17,38 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.0/dist/instantsearch.min.css">
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.0"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.0/dist/instantsearch-theme-algolia.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/docs.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/search.css" />
     <script src="/assets/js/search.js"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-dark" style="background-color: #2097ff;">
         <a class="navbar-brand" style="color: white" href="/">MyHomeworkSpace Support</a>
-        <form class="form-inline" id="nav-search">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
     </nav>
-    <div class="jumbotron fluid">
+    <div class="search-top">
         <div class="container">
             <h1>Search</h1>
             <br />
             <div id="search-box"></div>
         </div>
     </div>
+    <div class="curve"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-9" id="content" data-spy="scroll" data-target="#tableOfContents" data-offset="0">
                 <div id="hits">
-                    <!-- Hits widget will appear here -->
+                    Just a moment...
                 </div>
 
             </div>
             <div class="col-md-3">
                 <div class="cantfind">
+                    <div id="search-sidebar"></div><br>
+                    <div id="hits-per-page-container"></div>
                     <strong>Can't find what you are looking for?</strong>
                     <p>Feel free to contact us!</p>
                 </div>
-                <img src="https://www.algolia.com/static_assets/images/pricing/pricing_new/algolia-powered-by-14773f38.svg"></img>
+                <img class="algolia-logo" src="https://www.algolia.com/static_assets/images/pricing/pricing_new/algolia-powered-by-14773f38.svg"></img>
             </div>
         </div>
     </div>

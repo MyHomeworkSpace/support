@@ -1,3 +1,29 @@
-.searchbar {
-    width: 100%;
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.cantfind {
+    position: sticky;
+    top: 20px;
+}
+
+.search-top {
+    background-color: #2097ff;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.curve {
+    border-radius: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 80px;
+    color: white;
+    background-color: #2097ff;
+    margin-bottom: 40px;
+}
+
+#hits-per-page-container {
+    display: none;
 }

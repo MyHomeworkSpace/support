@@ -4,4 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: search
 title: Search
+description: Find what you are looking for on this site
+icon: fas fa-search
 ---

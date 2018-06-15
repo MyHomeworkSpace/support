@@ -3,7 +3,7 @@ layout: docs
 title: Contact
 icon: far fa-envelope
 author: MyHomeworkSpace Team
-description: Get started with MyHomeworkSpace
+description: Can't find the answer to your question? Get in touch with us.
 ---
 
 There are many ways to contact the MyHomeworkSpace team.

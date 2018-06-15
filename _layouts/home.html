@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>MyHomeworkSpace Support</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9"
@@ -15,7 +15,7 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/home.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/home.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
 </head>
@@ -23,16 +23,10 @@
 <body>
     <nav class="navbar navbar-dark" style="background-color: #2097ff;">
         <a class="navbar-brand" style="color: white">MyHomeworkSpace Support</a>
-        <form class="form-inline" id="nav-search">
-            <input class="form-control mr-sm-2" id="nav-searchbar" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" id="navSubmit" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
     </nav>
     <div class="jumbotron fluid header">
-        <h1 class="display-5">Welcome to MyHomeworkSpace Support</h1>
-        <p class="lead white">We're here to help!</p>
+        <h1 class="display-5" id="headline">Welcome to MyHomeworkSpace Support</h1>
+        <p class="lead white" id="lead-text">We're here to help!</p>
         <div class="search-homepage-wrapper">
             <form class="form-inline" id="homepage-search">
                 <div class="search-homepage-wrapper">
@@ -43,9 +37,18 @@
                 </div>
             </form>
         </div>
+        <a class="btn btn-outline-light my-2 my-sm-0" id="search-button" href="search">Search</a>
     </div>
     <div class="jumbotron curve fluid"></div>
     <div class="container top-cards">
+        {% if page.announcement-display == true %}
+        <div class="card top-card">
+            {% if page.announcement-icon %}
+            <i class="lead top-card-icon {{ page.icon }}"></i>{% endif %} {% if page.announcement-header %}
+            <p class="lead top-card-title" href="/docs/start">{{ page.announcement-header }}</p>{% endif %}
+            <p>{{ content }}</p>
+        </div>
+        {% endif %}
         <div class="row">
             <div class="col-md-4 card-container">
                 <div class="card top-card">
@@ -79,9 +82,9 @@
             </div>
             <div class="col-md-6 card-container">
                 <div class="card top-card">
-                    <i class="lead top-card-icon far fa-smile"></i>
-                    <a class="lead top-card-title" href="#">Getting Started</a>
-                    <p>Learn the basics of MyHomeworkSpace</p>
+                    <i class="lead top-card-icon fas fa-list-ul"></i>
+                    <a class="lead top-card-title" href="#">All Articles</a>
+                    <p>View a list of all the support articles on this site</p>
                 </div>
             </div>
         </div>

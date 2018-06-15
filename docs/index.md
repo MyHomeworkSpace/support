@@ -1,12 +1,12 @@
 ---
 layout: docs
 title: All Articles
-icon: far fa-envelope
+icon: fas fa-list-ul
 author: MyHomeworkSpace Team
-description: Get started with MyHomeworkSpace
+description: A list of all help articles.
 ---
 
 {% for page in site.pages %}
-  <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+  <h2><a href="{{ page.url }}">{% if page.icon %}<i class="{{ page.icon }}"></i> {% endif %}{{ page.title }}</a></h2>
   <p>{{ page.description }}</p>
 {% endfor %}

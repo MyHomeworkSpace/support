@@ -66,4 +66,33 @@ body {
     padding: 10px 10px 10px 10px;
     box-shadow: 3px 3px 5px #88888871;
     margin-top: 20px;
+    transition: box-shadow .2s;
+}
+
+.card:hover {
+    padding: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 5px #0084ff71;
+    margin-top: 20px;
+}
+
+@media (max-width: 766px) {
+    #headline {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        padding-top: 10vh;
+    }
+}
+
+@media (max-width: 575px) {
+    .search-homepage-wrapper {
+        display: none;
+    }
+}
+
+@media (min-width: 575px) {
+    #search-button {
+        display: none;
+    }
 }
