@@ -57,16 +57,20 @@ Colors for classes will appear in Planner View and Homework View.
 Assignments take the form of "Homework" in MyHomeworkSpace.
 
 ### About Homework
-Homework takes the form of [Tag] Assignment, for example "<span style="background-color: rgb(76, 108, 155); color: rgb(255, 255, 255); padding: 2px;">Read</span> Romeo and Juliet". Also associated with Homework, is a due date, a done boolean (true or false), and a class enum (set of options).
+Homework takes the form of [Tag] Assignment, for example "<span style="background-color: rgb(76, 108, 155); color: rgb(255, 255, 255);" class="tag">Read</span> Romeo and Juliet". Also associated with Homework, is a due date, a done boolean (true or false), and a class enum (set of options).
 
 #### About Tags
 Tags are a system of assignment organization in MyHomeworkSpace. Learn more in [About Tags](tags). A list of tags can be found in the [Tags List](tags-list),
 
 ### Add Homework
 1. Click the <button class="btn btn-sm btn-light"><i class="fa fa-plus-square"></i> Add homework</button> button at the top of the screen
-2. This is where you can enter your assignment, in plain English. We call it Quick Add. For example, you can type **Read Romeo and Juliet Act 1 Scene 1 tomorrow in English**, or **Circles test on Tuesday in Math**
+2. This is where you can enter your assignment, in plain English. We call it Quick Add. For example, you can type **Read Romeo and Juliet Act 1 Scene 1 tomorrow in English**, or **Circles test on Tuesday in Algebra**.
 3. Note that a box appears below the Quick Add dialog, previewing your assignment. Press enter.
 4. You are now in the assignment edit dialog. Make any changes to the assignment, and click <button class="btn btn-sm btn-primary">Save Changes</button>.
+
+The samples above would be parsed as:
+{% include assignment.html title='<span class="tag" style="background-color: #4c6c9b; color: white;">Read</span> Romeo and Juliet Act 1 Scene 1' subject='English' due='Tomorrow' done='false' %}
+{% include assignment.html title='<span class="tag" style="background-color: #dc143c; color: white;">Test</span> Circles' subject='Math' due='Tuesday' done='false' %}
 
 ### Mark homework as done
 1. Hover your mouse over the homework in either Homework View or Planner View

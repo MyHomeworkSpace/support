@@ -100,6 +100,10 @@ li::before {
     float: right;
 }
 
+.tag {
+    padding: 2px;
+}
+
 @media (min-width: 576px) {
     #mobile-search {
         display: none;
