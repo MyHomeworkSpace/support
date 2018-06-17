@@ -102,6 +102,10 @@ li::before {
     padding: 2px;
 }
 
+.assignment {
+    margin-bottom: 20px;
+}
+
 @media (min-width: 576px) {
     #mobile-search {
         display: none;

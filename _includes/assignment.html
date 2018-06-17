@@ -1,18 +1,13 @@
-<div class="card" style="box-shadow: 3px 3px 5px #88888871; padding: 10px; max-width: 500px;">
+<div class="card assignment" style="box-shadow: 3px 3px 5px #88888871; padding: 10px; max-width: 500px;">
     <p class="lead" markdown="span"><strong>{{ include.title }}</strong></p>
     <div class="row">
         <div class="col-sm-6">
             <strong>Due:</strong>
             <p>{{ include.due }}</p>
+        </div>
+        <div class="col-sm-6">
             <strong>Subject:</strong>
             <p>{{ include.subject }}</p>
         </div>
-        <div class="col-sm-6">
-            <strong>Done:</strong>
-            <p>{{ include.done }}</p>
-            <strong>Description</strong>
-            <p>{% if include.description %}{{ include.description}}{% else %}<em>None</em>{% endif %}</p>
-        </div>
     </div>
 </div>
-<br />
