@@ -15,7 +15,7 @@ You can use the feedback buttons to MyHomeworkSpace to contact us.
 Feel free to tweet us [@myhwspace](https://twitter.com/myhwspace)
 
 ## Via Email
-You can email us at [hello@pulsewearables.com](mailto:hello@pulsewearables.com)
+You can email us at [hello@myhomework.space](mailto:hello@myhomework.space)
 
 ## Via GitHub
 You can open an issue in any of our repositories, found in our [organization](https://github.com/myhomeworkspace). Some helpful ones may be [client](https://github.com/myhomeworkspace/client) (the MyHomeworkSpace front end), [api-server](https://github.com/myhomeworkspace/api-server) (the MyHomeworkSpace back end and API), or [DaltonTab](https://github.com/ultimathexers/daltontab)
