@@ -1,4 +1,6 @@
 $(()=>{
+    $("#suggest").attr("href", $("#url").text().replace(".html", ".md"));
+
     $('#nav-search').submit(function () {
         location.href = "/search?query=" + $("#nav-searchbar").val();
         return false;
@@ -29,11 +31,14 @@ $(()=>{
         $(".helpful").text("Thank you for your feedback!")
     })
     $("#helpful-icon-no").click(()=>{
-        $(".helpful").text("We'll get a teammate over here as soon as possible to get this issue resolved.");
         $.post(
             "https://hooks.slack.com/services/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",
             'payload={"text": "Someone didn\'t like the support page at <' + location.href + '>"}'
         );
+        $(".helpful").text("We'll get a teammate over here as soon as possible to get this issue resolved.\n");
+        link = $("<a>Suggest changes with GitHub</a>");
+        link.attr("href", $("#url").text().replace(".html", ".md"));
+        $(".helpful").append(link);
     })
 
     $(window).scroll(()=>{
