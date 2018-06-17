@@ -57,7 +57,7 @@ Colors for classes will appear in Planner View and Homework View.
 Assignments take the form of "Homework" in MyHomeworkSpace.
 
 ### About Homework
-Homework takes the form of [Tag] Assignment, for example "<span style="background-color: rgb(76, 108, 155); color: rgb(255, 255, 255);" class="tag">Read</span> Romeo and Juliet". Also associated with Homework, is a due date, a done boolean (true or false), and a class enum (set of options).
+Homework takes the form of [Tag] Assignment, for example "<span style="background-color: rgb(76, 108, 155); color: rgb(255, 255, 255);" class="tag">Read</span> Romeo and Juliet". Each homework item also has a due date and an associated class.
 
 #### About Tags
 Tags are a system of assignment organization in MyHomeworkSpace. Learn more in [About Tags](tags). A list of tags can be found in the [Tags List](tags-list),
