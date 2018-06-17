@@ -11,13 +11,13 @@ description: Get started with MyHomeworkSpace
 
 Welcome to MyHomeworkSpace! The first step is to get signed up. Signing up for MyHomeworkSpace is free and easy.
 
-## Get Signed Up
+## Get signed up
 1. Open a new browser tab, and go to [myhomework.space](https://myhomework.space)
 2. Click <button class="btn btn-sm btn-primary">Get Started</button>.
-3. Sign in with your DaltonID and Dalton Password, the same login that you use for HS Registration and Classes.
+3. Sign in with your Dalton account, the same login that you use for HSRegistration and Classes.
 4. Click <button class="btn btn-sm btn-dark" style="border-radius: 0">Log in</button>
 
-{% include alert.html content="**Warning!** When you click the Log in button, you are aggreeing to MyHomeworkSpace's terms of service and privacy policy, which can be found on our [legal site](https://legal.myhomework.space). Make sure that you agree with our data use policies before clicking that button." color="warning" icon="fas fa-exclamation-triangle" %}
+{% include alert.html content="**Warning!** When you click the Log in button, you are agreeing to MyHomeworkSpace's terms of service and privacy policy, which can be found on our [legal site](https://legal.myhomework.space). Make sure that you agree with our data use policies before clicking that button." color="warning" icon="fas fa-exclamation-triangle" %}
 {% include alert.html content="MyHomeworkSpace will **never** store your Dalton password. You can find more information in our privacy policy, which can be found on our [legal site](https://legal.myhomework.space)." color="success" icon="fas fa-lock" %}
 
 ---
@@ -36,7 +36,7 @@ Welcome to MyHomeworkSpace! The first step is to get signed up. Signing up for M
 
 {% include alert.html content="**Hint:** Currently, adding teachers does not have any functionality except for displaying them in Classes view. We hope to add more functionality in future updates, but for now, adding a teacher doesn't do anything and is completely optional." color="info" icon="fas fa-info" %}
 
-### Remove classes you aren't taking.
+### Remove classes you aren't taking
 1. Hover your mouse over a class that you are not taking.
 2. Click the edit button. (It looks like this: <i class="fas fa-edit"></i>).
 3. Click <button class="btn btn-sm btn-danger">Delete</button>.
@@ -77,17 +77,17 @@ The samples above would be parsed as:
 2. Click the mark as done checkbox (It looks like a circle).
 3. The homework will be marked as done
 
-### Edit Homework
+### Edit homework
 1. Hover over the homework that you want to edit.
 2. Click the edit button. (It looks like this: <i class="fas fa-edit"></i>).
 3. Make any changes to the assignment.
 4. Click <button class="btn btn-sm btn-primary">Save Changes</button>.
 
-## Connect Your Schedule
+## Connect your schedule
 MyHomeworkSpace provides an easy way to connect your schedule.
 1. Click the "<i class="far fa-calendar-alt"></i> Calendar" tab.
 2. Click <button class="btn btn-sm btn-primary">Get Started <i class="fas fa-arrow-right"></i></button>.
 3. Type the password that you use to log into classes, and click <button class="btn btn-sm btn-primary">Get schedule <i class="fas fa-arrow-right"></i></button>.
 {% include alert.html content="MyHomeworkSpace will **never** store your Dalton password. You can find more information in our privacy policy, which can be found on our [legal site](https://legal.myhomework.space)." color="success" icon="fas fa-lock" %}
 
-### Add Calendar Events
+### Add calendar events
