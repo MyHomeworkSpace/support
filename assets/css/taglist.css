@@ -1,0 +1,10 @@
+#tagList .tagListPrefixGroup {
+	margin-bottom: 4px;
+}
+
+#tagList .tagListPrefix {
+	display: inline-block;
+	font-size: 18px;
+	margin-right: 5px;
+	padding: 2px 6px;
+}
