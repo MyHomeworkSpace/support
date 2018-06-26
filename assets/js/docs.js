@@ -1,3 +1,7 @@
+if (window.location.hostname.indexOf("myhomework.space") > -1 && window.location.protocol == "http:") {
+	window.location.protocol = "https:";
+}
+
 $(()=>{
     $("#suggest").attr("href", $("#url").text().replace(".html", ".md"));
 
