@@ -21,8 +21,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
+collections:
+  endpoints:
+    output: false
 
 # Build settings
 markdown: kramdown
@@ -31,6 +33,15 @@ url: help.myhomework.space
 algolia:
   application_id: QF9EIEIPVJ
   index_name:     site # You can replace that with whatever name you want
+  files_to_exclude:
+    - index.html
+    - index.md
+    - endpoints/*
+    - 404.md
+    - embeddedsearch.md
+    - search.md
+    - CNAME
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
