@@ -3,9 +3,18 @@ body {
     line-height: 2rem;
 }
 
-.table-of-contents {
+.table-of-contents, .sidebar-sticky {
     position: sticky;
     top: 70px;
+    height: calc(100vh - 90px);
+    overflow: scroll;
+}
+
+.api-sidebar {
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 40px);
+    overflow: scroll;
 }
 
 .helpful {
@@ -39,13 +48,13 @@ ol {
     padding-left: 10px;
 }
 
-li {
+ol>li {
     counter-increment: ol-counter;
     line-height: 2rem;
     padding-bottom: 1rem;
 }
 
-li::before {
+ol>li::before {
     content: counter(ol-counter);
     display: block;
     text-align: center;
@@ -106,8 +115,24 @@ li::before {
     margin-bottom: 20px;
 }
 
-#suggest {
+#suggest, .subtle {
     color: #666666;
+}
+
+.hidden {
+    display: none;
+}
+
+.sidebar-title {
+    padding-top: 10px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.handwritten {
+    font-family: 'Architects Daughter', cursive;
 }
 
 @media (min-width: 576px) {

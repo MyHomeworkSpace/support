@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MyHomeworkSpace Support (and API Documentation) | {{ page.title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+		integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/docs.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/dracula.css" />
+</head>
+
+<body>
+	<nav class="navbar navbar-dark" style="background-color: #2097ff;">
+		<a class="navbar-brand" style="color: white" href="/">MyHomeworkSpace Support</a>
+		<form class="form-inline" id="nav-search">
+			<input class="form-control mr-sm-2" type="search" id="nav-searchbar" placeholder="Search"
+				aria-label="Search">
+			<button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+				<i class="fas fa-search"></i>
+			</button>
+		</form>
+		<a class="btn btn-outline-light my-2 my-sm-0" id="mobile-search" href="/search">
+			<i class="fas fa-search"></i>
+		</a>
+	</nav>
+	<div class="sticky-top">
+		<nav class="navbar navbar-light sticky-top title-bar" style="background-color: #f8f9fa" id="title-bar-nav">
+			<a class="navbar-brand page-title" href="#">{% if page.icon %}
+				<i class="{{ page.icon }}"> </i> {% endif %}{{ page.title }}</a>
+			<a class="navbar-brand" id="read-progress-percent" href="#"></a>
+		</nav>
+		<div id="read-progress" class="title-bar"></div>
+	</div>
+	<div class="jumbotron fluid">
+		<div class="container">
+			<h1 id="title">
+				<i class="fas fa-code"></i> {{ page.title }}</h1>
+			<p class="lead">{{ page.subtitle }}</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="api-sidebar">
+					<div class="not-signed-in">
+						<button class="btn btn-primary btn-block" id="sign-in">Sign In</button>
+						<h6 class="sidebar-title">Base URL</h6>
+						<select class="custom-select" id="baseurl-select">
+							<option value="https://api-v2.myhomework.space/">api-v2.myhomework.space</option>
+							<option value="https://api-v2.staging2.myhomework.space/">
+								api-v2.staging2.myhomework.space
+							</option>
+							<option value="http://api-v2.myhomework.invalid/">api-v2.myhomework.invalid</option>
+							<option value="custom">Use a custom url</option>
+							<input type="text" class="form-control hidden" id="baseurl-select-custom"
+								placeholder="http://localhost:4000/">
+						</select>
+						<div class="hidden" id="client-id-select">
+							<h6 class="sidebar-title">Client ID</h6>
+							<input type="text" class="form-control" id="client-id-select-box"
+								placeholder="aBunCh0frAnd0mNeSs">
+							<p class="small"><small>Callback URL:
+									https://support.myhomework.space/apidocs.html</small>
+							</p>
+						</div>
+					</div>
+					<div class="signed-in hidden">
+						<ul class="fa-ul">
+							<li>
+								<span class="fa-li">
+									<i class="far fa-user"></i>
+								</span>
+								<span class="user-name"></span>
+							</li>
+							<li>
+								<span class="fa-li">
+									<i class="fas fa-globe"></i>
+								</span>
+								<span class="baseurl"></span>
+							</li>
+						</ul>
+						<button class="btn btn-danger btn-block" id="sign-out">Sign Out</button>
+					</div>
+					<hr>
+					<strong>All Endpoints</strong><br />
+					{% for endpoint in site.endpoints %}
+					<a href="#{{endpoint.endpoint | slugify: "ascii"}}"><span
+							class="badge badge-{% if endpoint.method == "POST" %}success{% else %}primary{%endif%}">{{endpoint.method}}</span>
+						{{ endpoint.endpoint }}</a><br />
+					{% endfor %}
+				</div>
+			</div>
+			<div class="col-md-8" id="content" data-spy="scroll" data-target="#tableOfContents" data-offset="0">
+				{{ content }}
+				<div class="alert alert-info signed-in hidden">
+					Try it out is currently only availble for GET and POST requests that return JSON and do not accept
+					any URL parameters, but we hope to expand it soon!
+				</div>
+				<div class="alert alert-danger signed-in hidden">
+					<strong>Warning!</strong> This is not a sandbox. Any requests you make using "Try it out" will have
+					<u>real</u>
+					implications on your account at <span class="baseurl-noapi"></span>. Want a sandbox enviorment? Try
+					running MyHomeworkSpace locally.
+				</div>
+				<hr>
+				{% for endpoint in site.endpoints %}
+				<h2 id="{{endpoint.endpoint | slugify: "ascii"}}"><span
+						class="badge badge-{% if endpoint.method == "POST" %}success{% else %}primary{%endif%}">{{endpoint.method}}</span>
+					{{ endpoint.endpoint }}</h2>
+				<a href="https://github.com/MyHomeworkSpace/support/edit/master{{ endpoint.url }}.md"
+					class="subtle small">Suggest changes to this endpoint's documentation with GitHub</a>
+				<p>{{ endpoint.content }}</p>
+				{% if endpoint.body %}
+				<h3>Body</h3>
+				Body Type: <code>{{endpoint.body}}</code>
+				<ul>
+					{% for field in endpoint.fields %}
+					<li><code>{{field.name}}</code> - {{field.type}} ({{field.description}}){%if field.required %}
+						-
+						<span class="text-danger">Required</span>{%endif%}</li>
+					{% endfor %}
+				</ul>
+				{% else %}
+				<h3>Body</h3>
+				This request does not accept a body
+				</h3>
+				{% endif %}
+				<h3>Try it out</h3>
+				<div class="alert alert-info not-signed-in" role="alert">
+					You must be signed in to use try it out.
+				</div>
+				{% if endpoint.tryItOutDisabled %}
+				<div class="alert alert-info signed-in hidden" role="alert">
+					Try it out is unavailable for this endpoint.
+				</div>
+				{% else %}
+				{% if endpoint.destructive %}
+				<div class="alert alert-danger signed-in hidden">
+					<strong>Warning!</strong> This is a potentially destructive action. Try it out is not a
+					sandbox. Any requests you make using "Try it out"
+					will have
+					<u>real</u>
+					implications on your account at <span class="baseurl-noapi"></span>. Want a sandbox
+					enviorment? Try
+					running MyHomeworkSpace locally.
+				</div>
+				{% endif %}
+				<div class="hidden tryit-container">
+					<form id="{{ endpoint.endpoint | slugify "ascii" }}form" class="tryit"
+						action="{{endpoint.endpoint}}" data-method="{{endpoint.method}}"
+						data-slug="{{ endpoint.endpoint | slugify "ascii" }}">
+						{% if endpoint.fields %}
+						{% for field in endpoint.fields %}
+						<div class="form-group row">
+							<label for="{{field.name}}" class="col-4 col-form-label">
+								<code>{{ field.name }}</code>{% if field.required != true %}
+								(Optional){% endif %}</label>
+							<div class="col-8">
+								<input id="{{field.name}}" name="{{field.name}}"
+									type="{% if field.formtype%}{{field.formtype}}{% else %}text{% endif %}"
+									class="form-control" aria-describedby="{{field.name}}HelpBlock"
+									{% if field.required %}required="required" {% endif %}>
+								<span id="{{field.name}}HelpBlock"
+									class="form-text text-muted">{{ field.description }}</span>
+							</div>
+						</div>
+						{% endfor %}
+						<div class="form-group row">
+							<div class="offset-4 col-8">
+								<button name="submit" type="submit" class="btn btn-primary">Send
+									Request</button>
+							</div>
+						</div>
+						{% else %}
+						<p>This endpoint does not accept any parameters. Push the big blue
+							button to send a request.</p>
+						<p class="centered"><button name="submit" type="submit" class="btn btn-lg btn-primary">Send
+								Request</button></p>
+						{% endif %}
+					</form>
+					<hr>
+					<p class="hidden centered" id="{{ endpoint.endpoint | slugify "ascii" }}loading"><i
+							class="fas fa-circle-notch fa-spin"></i> Sending request...</p>
+					<pre id="{{ endpoint.endpoint | slugify "ascii" }}resultsContainer"
+						class="hidden"><code class="json" id="{{ endpoint.endpoint | slugify "ascii" }}results"></code></pre>
+				</div>
+				{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div id="bottom"></div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="/assets/js/apireference.js"></script>
+</body>
+
+</html>

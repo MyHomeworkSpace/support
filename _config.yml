@@ -25,6 +25,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 collections:
   endpoints:
     output: false
+    permalink: /_endpoints/:name
 
 # Build settings
 markdown: kramdown
@@ -36,7 +37,7 @@ algolia:
   files_to_exclude:
     - index.html
     - index.md
-    - endpoints/*
+    - _endpoints/*
     - 404.md
     - embeddedsearch.md
     - search.md

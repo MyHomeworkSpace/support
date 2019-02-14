@@ -7,13 +7,14 @@
     <title>MyHomeworkSpace Support</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Lato" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/home.js"></script>
@@ -44,8 +45,8 @@
         {% if page.announcement-display == true %}
         <div class="card top-card">
             {% if page.announcement-icon %}
-            <i class="lead top-card-icon {{ page.icon }}"></i>{% endif %} {% if page.announcement-header %}
-            <p class="lead top-card-title" href="/docs/start">{{ page.announcement-header }}</p>{% endif %}
+            <i class="lead top-card-icon {{ page.announcement-icon }}"></i>{% endif %} {% if page.announcement-header %}
+            <p class="lead top-card-title">{{ page.announcement-header }}</p>{% endif %}
             <p>{{ content }}</p>
         </div>
         {% endif %}
@@ -59,9 +60,9 @@
             </div>
             <div class="col-md-4 card-container">
                 <div class="card top-card">
-                    <i class="lead top-card-icon fas fa-gift"></i>
-                    <a class="lead top-card-title" href="/docs/new">What's New</a>
-                    <p>What's new in MyHomeworkSpace</p>
+                    <i class="lead top-card-icon fas fa-code"></i>
+                    <a class="lead top-card-title" href="/apireference">API Reference</a>
+                    <p>Learn to use the MyHomeworkSpace Public API</p>
                 </div>
             </div>
             <div class="col-md-4 card-container">
