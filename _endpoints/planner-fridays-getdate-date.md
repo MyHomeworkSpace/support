@@ -1,7 +1,7 @@
 ---
 endpoint: planner/fridays/get/:date
 method: GET
-# tryItOutDisabled: true
+tryItOutDisabled: true
 ---
 
 Gets the number of a particular Friday. `:date` is a URL parameter for the Friday being queried.
