@@ -28,7 +28,6 @@ Due to the length of this snippet, it has been collapsed. Click â€œExpand codeâ€
 		"days": [
 			{
 				"day": "2019-02-14",
-				"shiftingIndex": -1,
 				"currentTerm": {
 					"id": 2,
 					"termId": 97372,

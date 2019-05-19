@@ -4,6 +4,8 @@ method: GET
 tryItOutDisabled: true
 ---
 
+**This API is deprecated and should not be used. See `/calendar/getView` for a better alternative.**
+
 Gets a calendar view for the specified week. `:monday` is a URL parameter for the ISO8601 date of the monday of the week.
 
 ## Sample Response
@@ -19,11 +21,6 @@ Due to the length of this snippet, it has been collapsed. Click â€œExpand codeâ€
 		"termId": 97372,
 		"name": "2nd Semester",
 		"userId": 1
-	},
-	"friday": {
-		"id": -1,
-		"date": "",
-		"index": -1
 	},
 	"events": [],
 	"hwEvents": [],
