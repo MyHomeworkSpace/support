@@ -16,12 +16,6 @@ Due to the length of this snippet, it has been collapsed. Click â€œExpand codeâ€
 <pre><code class="json">{
 	"status": "ok",
 	"announcements": [],
-	"currentTerm": {
-		"id": 6,
-		"termId": 97372,
-		"name": "2nd Semester",
-		"userId": 1
-	},
 	"events": [],
 	"hwEvents": [],
 	"scheduleEvents": [
