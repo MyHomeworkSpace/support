@@ -14,7 +14,9 @@ method: GET
 ---
 Returns the logged in user's profile information.
 
-**The response to this endpoint may contain additional fields not described here. These fields are intended for backwards compatibility with older clients, and so may break or disappear at any time. Please ensure you use only the fields described in the sample below.**
+<div class="alert alert-warning">
+<strong>Caution!</strong> The response to this endpoint may contain additional fields not described here. These fields are intended for backwards compatibility with older clients, and so may break or disappear at any time. Please ensure you use only the fields described in the sample below.
+</div>
 
 ### Sample Response
 
