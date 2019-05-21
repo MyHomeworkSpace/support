@@ -13,7 +13,40 @@ fields:
     required: true
 ---
 
-Gets a range of dates from the calendar
+Fetches the calendar view for a given range.
+
+### Event tags
+Some events may contain more data than just the name, start, and end. This is referred to as an event's _metadata_ and is stored in the `tags` object of an event. The `tags` objects is a key-value store, where the keys are numeric and correspond to different information that may be stored with an event. For example, a Homework event may have a `tags` object that looks like this, where `2` is the number that corresponds to the "homework" tag:
+
+```json
+"tags": {
+	"2": {
+		"id": 24,
+		"name": "Read next chapter",
+		"due": "2019-05-23",
+		"desc": "",
+		"complete": 0,
+		"classId": 3,
+		"userId": 1
+	}
+}
+```
+
+While a given tag may not be present on all events, if it is present, it is guaranteed to be the correct type. For example, the "building name" tag will, if present, always be a string. See the sample response below for more examples. A full list of tags is below:
+
+| name | numeric value |
+| ---- | ------------- |
+| Reserved for future use | 0 |
+| Description | 1 |
+| Homework | 2 |
+| Term ID | 3 |
+| Class ID | 4 |
+| Owner ID | 5 |
+| Owner name | 6 |
+| Day number | 7 |
+| Block | 8 |
+| Building name | 9 |
+| Room number | 10 |
 
 ### Sample Response
 Due to the length of this snippet, it has been collapsed. Click “Expand code” to expand it.
@@ -23,148 +56,207 @@ Due to the length of this snippet, it has been collapsed. Click “Expand code�
 
 <pre><code class="json">
 {
-	"status": "ok",
-	"view": {
-		"days": [
-			{
-				"day": "2019-02-14",
-				"currentTerm": {
-					"id": 2,
-					"termId": 97372,
-					"name": "2nd Semester",
-					"userId": 1
-				},
-				"announcements": [],
-				"events": [
-					{
-						"id": 15,
-						"name": "HS House - Neiers/Phillips",
-						"start": 1550155800,
-						"end": 1550156700,
-						"type": 2,
-						"data": {
-							"termId": -1,
-							"classId": 108778111,
-							"ownerId": -1,
-							"ownerName": "Jake Peralta",
-							"dayNumber": 4,
-							"block": "S",
-							"buildingName": "108 E. 89th St.",
-							"roomNumber": "301"
-						},
-						"userId": 1
-					},
-					{
-						"id": 18,
-						"name": "Assembly",
-						"start": 1550163000,
-						"end": 1550166600,
-						"type": 2,
-						"data": {
-							"termId": -1,
-							"classId": 108778111,
-							"ownerId": -1,
-							"ownerName": "Jake Peralta",
-							"dayNumber": 4,
-							"block": "S",
-							"buildingName": "108 E. 89th St.",
-							"roomNumber": "Theater"
-						},
-						"userId": 1
-					},
-					{
-						"id": 90,
-						"name": "Environmental Science: Resources - 3335-01 (B)",
-						"start": 1550149800,
-						"end": 1550152500,
-						"type": 2,
-						"data": {
-							"termId": 97372,
-							"classId": 108471529,
-							"ownerId": 2615842,
-							"ownerName": "Amy Santiago",
-							"dayNumber": 4,
-							"block": "B",
-							"buildingName": "108 E. 89th St.",
-							"roomNumber": "1204"
-						},
-						"userId": 1
-					},
-					{
-						"id": 91,
-						"name": "Robotics - 3410-04 (A)",
-						"start": 1550152800,
-						"end": 1550155500,
-						"type": 2,
-						"data": {
-							"termId": 97372,
-							"classId": 108472052,
-							"ownerId": 3313989,
-							"ownerName": "Rosa Diaz",
-							"dayNumber": 4,
-							"block": "A",
-							"buildingName": "108 E. 89th St.",
-							"roomNumber": "502"
-						},
-						"userId": 1
-					},
-					{
-						"id": 92,
-						"name": "AMLIT: Self, Society and Cosmos - 3232-01 (D)",
-						"start": 1550157000,
-						"end": 1550159700,
-						"type": 2,
-						"data": {
-							"termId": 97372,
-							"classId": 108471731,
-							"ownerId": 586333,
-							"ownerName": "Charles Boyle",
-							"dayNumber": 4,
-							"block": "D",
-							"buildingName": "108 E. 89th St.",
-							"roomNumber": "203"
-						},
-						"userId": 1
-					},
-					{
-						"id": 93,
-						"name": "Mandarin Chinese 3 - 3122-01 (C)",
-						"start": 1550160000,
-						"end": 1550162700,
-						"type": 2,
-						"data": {
-							"termId": 97372,
-							"classId": 108471856,
-							"ownerId": 5327271,
-							"ownerName": "Terrence Jeffords",
-							"dayNumber": 4,
-							"block": "C",
-							"buildingName": "108 E. 89th St.",
-							"roomNumber": "252"
-						},
-						"userId": 1
-					},
-					{
-						"id": 94,
-						"name": "Topics in World History III: The 20th Century - 3520-03 (F)",
-						"start": 1550172600,
-						"end": 1550175300,
-						"type": 2,
-						"data": {
-							"termId": 97372,
-							"classId": 108472098,
-							"ownerId": 3456065,
-							"ownerName": "Raymond Holt",
-							"dayNumber": 4,
-							"block": "F",
-							"buildingName": "108 E. 89th St.",
-							"roomNumber": "311"
-						},
-						"userId": 1
-					}
-				]
-			}
-		]
-	}
+  "status": "ok",
+  "view": {
+    "providers": [
+      {
+        "name": "The Dalton School Schedule"
+      }
+    ],
+    "days": [
+      {
+        "day": "2019-03-11",
+        "announcements": [],
+        "events": [
+          {
+            "id": 1689,
+            "name": "Computer Science",
+            "start": 1552329000,
+            "end": 1552331700,
+            "recurRule": null,
+            "tags": {
+              "3": 97372,
+              "4": 108697389,
+              "5": 1320694,
+              "6": "Sample Teacher",
+              "7": 1,
+              "8": "G",
+              "9": "108 E. 89th St.",
+              "10": "502"
+            },
+            "source": 0,
+            "userId": 1
+          }
+        ]
+      },
+      {
+        "day": "2019-03-12",
+        "announcements": [],
+        "events": [
+          {
+            "id": 1665,
+            "name": "Physics",
+            "start": 1552399800,
+            "end": 1552405500,
+            "recurRule": null,
+            "tags": {
+              "3": 97372,
+              "4": 108471973,
+              "5": 586292,
+              "6": "Sample Teacher",
+              "7": 2,
+              "8": "H",
+              "9": "108 E. 89th St.",
+              "10": "1205"
+            },
+            "source": 0,
+            "userId": 1
+          }
+        ]
+      },
+      {
+        "day": "2019-03-13",
+        "announcements": [],
+        "events": [
+          {
+            "id": 1691,
+            "name": "Math",
+            "start": 1552492200,
+            "end": 1552494900,
+            "recurRule": null,
+            "tags": {
+              "3": 97372,
+              "4": 108644631,
+              "5": 586462,
+              "6": "Sample Teacher",
+              "7": 3,
+              "8": "I",
+              "9": "108 E. 89th St.",
+              "10": "503"
+            },
+            "source": 0,
+            "userId": 1
+          }
+        ]
+      },
+      {
+        "day": "2019-03-14",
+        "announcements": [],
+        "events": [
+          {
+            "id": 1697,
+            "name": "Robotics",
+            "start": 1552572600,
+            "end": 1552575300,
+            "recurRule": null,
+            "tags": {
+              "3": 97372,
+              "4": 108472048,
+              "5": 3313989,
+              "6": "Sample Teacher",
+              "7": 4,
+              "8": "D",
+              "9": "108 E. 89th St.",
+              "10": "502"
+            },
+            "source": 0,
+            "userId": 1
+          }
+        ]
+      },
+      {
+        "day": "2019-03-15",
+        "announcements": [
+          {
+            "id": -1,
+            "date": "2019-03-15",
+            "text": "Friday 4",
+            "grade": -1,
+            "type": 0
+          }
+        ],
+        "events": [
+          {
+            "id": 1702,
+            "name": "History",
+            "start": 1552651800,
+            "end": 1552654500,
+            "recurRule": null,
+            "tags": {
+              "3": 97372,
+              "4": 108569265,
+              "5": 4791732,
+              "6": "Sample Teacher",
+              "7": 8,
+              "8": "C",
+              "9": "108 E. 89th St.",
+              "10": "350"
+            },
+            "source": 0,
+            "userId": 1
+          }
+        ]
+      },
+      {
+        "day": "2019-03-16",
+        "announcements": [
+          {
+            "id": 127,
+            "date": "2019-03-16",
+            "text": "Start of Spring Recess",
+            "grade": 0,
+            "type": 2
+          }
+        ],
+        "events": [
+          {
+            "id": 8,
+            "name": "Some important event",
+            "start": 1552761900,
+            "end": 1552763700,
+            "recurRule": null,
+            "tags": {
+              "1": ""
+            },
+            "source": -1,
+            "userId": 1
+          },
+          {
+            "id": 1,
+            "name": "Read next chapter",
+            "start": 1552756500,
+            "end": 1552759200,
+            "recurRule": null,
+            "tags": {
+              "2": {
+                "id": 24,
+                "name": "Read next chapter",
+                "due": "2019-05-23",
+                "desc": "",
+                "complete": 0,
+                "classId": 3,
+                "userId": 1
+              }
+            },
+            "source": -1,
+            "userId": 1
+          }
+        ]
+      },
+      {
+        "day": "2019-03-17",
+        "announcements": [
+          {
+            "id": 127,
+            "date": "2019-03-17",
+            "text": "Spring Recess",
+            "grade": 0,
+            "type": 2
+          }
+        ],
+        "events": []
+      }
+    ]
+  }
 }
 </pre></code></details>
