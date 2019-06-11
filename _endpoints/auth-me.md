@@ -26,7 +26,6 @@ Returns the logged in user's profile information.
 	"user": {
 		"id": 1,
 		"name": "Joe Schmo",
-		"username": "c99js",
 		"email": "c99js@dalton.org",
 		"type": "student",
 		"features": "[]",
