@@ -2,7 +2,7 @@
 layout: docs
 title: Removing Classes
 icon: fas fa-user-minus
-author: William Barkoff
+contributors: ["nywillb", "thatoddmailbox"]
 description: Remove classes from MyHomeworkSpace.
 ---
 

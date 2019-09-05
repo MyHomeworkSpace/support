@@ -2,7 +2,7 @@
 layout: docs
 title: Getting Started with the MyHomeworkSpace Public API
 icon: fas fa-code
-author: William Barkoff
+contributors: ["nywillb"]
 description: Learn how to use the MyHomeworkSpace API
 mermaid: true
 ---

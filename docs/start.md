@@ -2,7 +2,7 @@
 layout: docs
 title: Getting Started
 icon: far fa-smile
-author: William Barkoff
+contributors: ["nywillb"]
 description: Get started with MyHomeworkSpace
 ---
 

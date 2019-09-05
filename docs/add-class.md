@@ -2,7 +2,7 @@
 layout: docs
 title: Adding Classes
 icon: fas fa-user
-author: William Barkoff
+contributors: ["nywillb", "thatoddmailbox"]
 description: Add classes to MyHomeworkSpace.
 ---
 

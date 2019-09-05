@@ -6,15 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MyHomeworkSpace Support | {{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"
-        integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/assets/js/docs.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Lato" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/docs.css" />
 </head>
@@ -45,7 +41,6 @@
         <div class="container">
             <h1 id="title">{% if page.icon %}
                 <i class="{{ page.icon }}"> </i> {% endif %}{{ page.title }}</h1>
-            <p class="lead">Written by {{ page.author }}</p>
         </div>
     </div>
     <div class="container">
@@ -77,8 +72,24 @@
                 <div class="table-of-contents">
                     <strong>Table of Contents</strong>
                     <ul class="nav flex-column nav-column" id="tableOfContents"></ul>
-                    <hr>
-                    <small><a id="suggest">Suggest Changes with GitHub</a></small>
+                    <hr />
+                    <strong>Page contributors</strong>
+                    <div>
+                        {% for contributor in page.contributors %}
+                        <a href="https://github.com/{{contributor}}">
+                            <img
+                                class="avatar avatar-small"
+                                src="https://avatars3.githubusercontent.com/{{contributor}}?v=3&amp;s=40"
+                                alt="{{contributor}}"
+                                width="40"
+                                height="40"
+                                data-toggle="tooltip"
+                                data-placement="top"
+                                title="{{contributor}}" />
+                        </a>
+                        {% endfor %}
+                    </div>
+                    {% github_edit_link "Edit this page" %}
                 </div>
             </div>
         </div>
@@ -88,6 +99,11 @@
     <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({ startOnLoad: true });</script>
     {% endif %}
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/docs.js"></script>
 </body>
 
 </html>

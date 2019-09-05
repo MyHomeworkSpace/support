@@ -2,7 +2,7 @@
 layout: docs
 title: Color Coding Classes
 icon: fas fa-palette
-author: William Barkoff
+contributors: ["nywillb"]
 description: Learn to color code classes in MyHomeworkSpace
 ---
 

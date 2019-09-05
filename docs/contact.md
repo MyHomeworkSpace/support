@@ -2,7 +2,7 @@
 layout: docs
 title: Contact
 icon: far fa-envelope
-author: MyHomeworkSpace Team
+contributors: ["nywillb", "thatoddmailbox"]
 description: Can't find the answer to your question? Get in touch with us.
 ---
 
