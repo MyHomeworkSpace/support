@@ -26,12 +26,21 @@ Returns the logged in user's profile information.
 	"user": {
 		"id": 1,
 		"name": "Joe Schmo",
-		"email": "c99js@dalton.org",
-		"type": "student",
-		"features": "[]",
+		"email": "joe.schmo@example.com",
+		"type": "mhs",
 		"level": 0,
-		"showMigrateMessage": 0
-	},
-	"tabs": []
+		"emailVerified": true,
+		"showMigrateMessage": 0,
+		"schools": [
+			{
+				"enrollmentID": 1,
+				"schoolID": "dalton",
+				"displayName": "The Dalton School",
+				"userDetails": "Signed in as Schmo, Joseph (Joe) '19 (c99js)",
+				"emailAddress": "c99js@dalton.org",
+				"userID": 1
+			}
+		]
+	}
 }
 ```

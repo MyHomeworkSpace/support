@@ -28,7 +28,7 @@ Gets all the feedback that was submitted. Note: Accessing this endpoint requires
 			"text": "I like MyHomeworkSpace",
 			"timestamp": "2019-02-07 23:14:10",
 			"userName": "Joe Schmo",
-			"userEmail": "c99js@dalton.org",
+			"userEmail": "joe.schmo@example.com",
 			"hasScreenshot": false
 		},
 		{
@@ -38,7 +38,7 @@ Gets all the feedback that was submitted. Note: Accessing this endpoint requires
 			"text": "You should have better API documentation",
 			"timestamp": "2019-02-07 23:14:46",
 			"userName": "Joe Schmo",
-			"userEmail": "c99js@dalton.org",
+			"userEmail": "joe.schmo@example.com",
 			"hasScreenshot": false
 		},
 	]
