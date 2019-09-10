@@ -2,7 +2,7 @@
 layout: docs
 title: Sign Up
 icon: fas fa-lock
-author: William Barkoff
+contributors: ["thatoddmailbox", "nywillb"]
 description: Sign up for MyHomeworkSpace
 ---
 

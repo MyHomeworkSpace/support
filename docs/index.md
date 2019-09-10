@@ -2,7 +2,7 @@
 layout: docs
 title: All Articles
 icon: fas fa-list-ul
-author: MyHomeworkSpace Team
+contributors: ["nywillb", "thatoddmailbox"]
 description: A list of all help articles.
 special-edit-url: https://github.com/MyHomeworkSpace/support/edit/master/docs/index.md
 ---

@@ -6,7 +6,7 @@ description: Homepage
 icon: fas fa-home
 
 # Announcement Settings
-announcement-display: true # Display the announcement?
+announcement-display: false # Display the announcement?
 announcement-icon: fas fa-code # What icon do you want in the announcement
 announcement-header: Introducing the MyHomeworkSpace Public API # What do you want the title of the annoucement to be.
 
