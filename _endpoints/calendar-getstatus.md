@@ -13,6 +13,8 @@ method: GET
 #     required: false
 ---
 
+**This API is deprecated and should not be used.**
+
 Checks to see if the user has enabled the calendar. Returns a `statusNum`.
 
 - `statusNum == 0` - Calendar is not imported.
