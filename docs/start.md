@@ -2,7 +2,7 @@
 layout: docs
 title: Getting Started
 icon: far fa-smile
-contributors: ["nywillb"]
+contributors: ["willbarkoff"]
 description: Get started with MyHomeworkSpace
 ---
 
@@ -17,8 +17,8 @@ Welcome to MyHomeworkSpace! The first step is to get signed up. Signing up for M
 3. Sign in with your Dalton account, the same login that you use for HSRegistration and Classes.
 4. Click <button class="btn btn-sm btn-dark" style="border-radius: 0">Log in</button>
 
-{% include alert.html content="**Warning!** When you click the Log in button, you are agreeing to MyHomeworkSpace's terms of service and privacy policy, which can be found on our [legal site](https://legal.myhomework.space). Make sure that you agree with our data use policies before clicking that button." color="warning" icon="fas fa-exclamation-triangle" %}
-{% include alert.html content="MyHomeworkSpace will **never** store your Dalton password. You can find more information in our privacy policy, which can be found on our [legal site](https://legal.myhomework.space)." color="success" icon="fas fa-lock" %}
+{% include alert.html content="**Warning!** When you click the Log in button, you are agreeing to MyHomeworkSpace's terms of service and privacy policy, which can be found on our [legal site](/legal). Make sure that you agree with our data use policies before clicking that button." color="warning" icon="fas fa-exclamation-triangle" %}
+{% include alert.html content="MyHomeworkSpace will **never** store your Dalton password. You can find more information in our privacy policy, which can be found on our [legal site](/legal)." color="success" icon="fas fa-lock" %}
 
 ---
 ## Add your classes
@@ -88,6 +88,6 @@ MyHomeworkSpace provides an easy way to connect your schedule.
 1. Click the "<i class="far fa-calendar-alt"></i> Calendar" tab.
 2. Click <button class="btn btn-sm btn-primary">Get Started <i class="fas fa-arrow-right"></i></button>.
 3. Type the password that you use to log into classes, and click <button class="btn btn-sm btn-primary">Get schedule <i class="fas fa-arrow-right"></i></button>.
-{% include alert.html content="MyHomeworkSpace will **never** store your Dalton password. You can find more information in our privacy policy, which can be found on our [legal site](https://legal.myhomework.space)." color="success" icon="fas fa-lock" %}
+{% include alert.html content="MyHomeworkSpace will **never** store your Dalton password. You can find more information in our privacy policy, which can be found on our [legal site](/legal)." color="success" icon="fas fa-lock" %}
 
 ### Add calendar events

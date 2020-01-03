@@ -2,7 +2,7 @@
 layout: docs
 title: Adding Teachers
 icon: fas fa-user
-contributors: ["nywillb", "thatoddmailbox"]
+contributors: ["willbarkoff", "thatoddmailbox"]
 description: Add teachers to your classes
 ---
 

@@ -2,6 +2,6 @@
 layout: docs
 title: About Hidden Classes
 icon: far fa-eye-slash
-contributors: ["nywillb"]
+contributors: ["willbarkoff"]
 description: Hide classes from Homework View
 ---

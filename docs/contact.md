@@ -2,7 +2,7 @@
 layout: docs
 title: Contact
 icon: far fa-envelope
-contributors: ["nywillb", "thatoddmailbox"]
+contributors: ["willbarkoff", "thatoddmailbox"]
 description: Can't find the answer to your question? Get in touch with us.
 ---
 

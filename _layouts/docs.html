@@ -77,14 +77,9 @@
                     <div>
                         {% for contributor in page.contributors %}
                         <a href="https://github.com/{{contributor}}">
-                            <img
-                                class="avatar avatar-small"
+                            <img class="avatar avatar-small"
                                 src="https://avatars3.githubusercontent.com/{{contributor}}?v=3&amp;s=40"
-                                alt="{{contributor}}"
-                                width="40"
-                                height="40"
-                                data-toggle="tooltip"
-                                data-placement="top"
+                                alt="{{contributor}}" width="40" height="40" data-toggle="tooltip" data-placement="top"
                                 title="{{contributor}}" />
                         </a>
                         {% endfor %}
@@ -94,7 +89,6 @@
             </div>
         </div>
     </div>
-    <div id="bottom"></div>
     {% if page.mermaid %}
     <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({ startOnLoad: true });</script>
