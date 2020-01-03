@@ -53,14 +53,5 @@ $(() => {
         } else {
             $(".title-bar").fadeOut();
         }
-        $("#read-progress").css("width", ($(window).scrollTop() / ($("#bottom").position().top - $(window).height())) * 100 + "%")
-        $("#read-progress-percent").text(Math.round($(window).scrollTop() / ($("#bottom").position().top - $(window).height()) * 100) + "%")
-        if (($(window).scrollTop() / ($("#bottom").position().top - $(window).height())) * 100 >= 100) {
-            $("#title-bar-nav").css("background-color", "#2097ff");
-            $("#read-progress-percent").fadeOut(0.5);
-            $(".page-title").css("color", "white");
-            $(".page-title").text("You just finished reading " + $("#title").text() + ".");
-            $("#read-progress").css("opacity", "0");
-        }
     })
 })
