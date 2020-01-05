@@ -2,8 +2,7 @@
 layout: minimal
 title: MyHomeworkSpace Privacy Policy
 icon: fas fa-lock
-last_updated: January 3rd, 2020
-contributors: ["myhomeworkspace"]
+last_updated: January 5th, 2020
 ---
 
 We respect your privacy. This policy outlines what information we collect, why we collect it, and where it goes. We never sell or market any of it, don’t worry!
@@ -16,7 +15,7 @@ Our service (“MyHomeworkSpace”) collects the following data about you either
 * Your name
     * We use your name when you submit feedback to MyHomeworkSpace so that we can see who sent it. We also use your name when we contact you in emails, and display your name to you throughout the user interface,
 * Your email address
-   * We use your Dalton email address to reply to any feedback you submit and to send you information and notifications about MyHomeworkSpace
+   * We use your email address to reply to any feedback you submit and to send you information and notifications about MyHomeworkSpace
 * Anything you type into your planner or the calendar.
 
 ---
@@ -90,4 +89,7 @@ Fix some typos, thanks [@robotxlabs](https://github.com/robotxlabs). [See this r
 Added information about screenshots included in feedback submissions. [See this revision](https://git.io/Jepye)
 
 **January 3rd, 2020**
-Added information about linking school accounts.
+Added information about linking school accounts. [See this revision](https://git.io/JehfN)
+
+**January 5th, 2020**
+Corrected a typo. 
