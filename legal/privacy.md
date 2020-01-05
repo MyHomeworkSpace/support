@@ -2,6 +2,7 @@
 layout: minimal
 title: MyHomeworkSpace Privacy Policy
 icon: fas fa-lock
+last_updated: January 3rd, 2020
 contributors: ["myhomeworkspace"]
 ---
 
@@ -71,22 +72,22 @@ As always, thank you for using MyHomeworkSpace!
 If you require access to an older version of our Privacy Policy, please do not hesitate to contact us at [hello@myhomework.space](mailto:hello@myhomework.space).
 
 **January 4th, 2017**
-Added Original Policy.
+Added Original Policy. [See this revision](https://git.io/JepD5)
 
 **April 24th, 2017**
-Added information about third party applications.
+Added information about third party applications. [See this revision](https://git.io/JepDF)
 
 **October 27th, 2017**
-Changed "schedules.dalton.org" to "dalton.myschoolapp.com"
+Changed "schedules.dalton.org" to "dalton.myschoolapp.com" [See this revision](https://git.io/JepDb)
 
 **May 5th, 2018**
-Added information about analytical information collected.
+Added information about analytical information collected. [See this revision](https://git.io/JepDx)
 
 **May 15th, 2018**
-Fix some typos, thanks [@robotxlabs](https://github.com/robotxlabs).
+Fix some typos, thanks [@robotxlabs](https://github.com/robotxlabs). [See this revision](https://git.io/JepDh)
 
-**February 27th, 2019**
-Added information about screenshots included in feedback submissions.
+**February 7th, 2019**
+Added information about screenshots included in feedback submissions. [See this revision](https://git.io/Jepye)
 
 **January 3rd, 2020**
 Added information about linking school accounts.
