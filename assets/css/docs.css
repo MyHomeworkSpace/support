@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
-    line-height: 2rem;
+    line-height: 1.5;
 }
 
 .table-of-contents, .sidebar-sticky {
@@ -50,7 +50,7 @@ ol {
 
 ol>li {
     counter-increment: ol-counter;
-    line-height: 2rem;
+    line-height: 1.5;
     padding-bottom: 1rem;
 }
 
