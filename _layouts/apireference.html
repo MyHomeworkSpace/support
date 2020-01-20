@@ -94,7 +94,7 @@
 					<hr>
 					<strong>All Endpoints</strong><br />
 					{% for endpoint in site.endpoints %}
-					<a href="#{{endpoint.endpoint | slugify: "ascii"}}"><span
+					<a href="#{{endpoint.endpoint | slugify: 'ascii' }}"><span
 							class="badge badge-{% if endpoint.method == "POST" %}success{% else %}primary{%endif%}">{{endpoint.method}}</span>
 						{{ endpoint.endpoint }}</a><br />
 					{% endfor %}
@@ -114,7 +114,7 @@
 				</div>
 				<hr>
 				{% for endpoint in site.endpoints %}
-				<h2 id="{{endpoint.endpoint | slugify: "ascii"}}"><span
+				<h2 id="{{endpoint.endpoint | slugify: 'ascii' }}"><span
 						class="badge badge-{% if endpoint.method == "POST" %}success{% else %}primary{%endif%}">{{endpoint.method}}</span>
 					{{ endpoint.endpoint }}</h2>
 				<a href="https://github.com/MyHomeworkSpace/support/edit/master{{ endpoint.url }}.md"
@@ -156,9 +156,9 @@
 				</div>
 				{% endif %}
 				<div class="hidden tryit-container">
-					<form id="{{ endpoint.endpoint | slugify "ascii" }}form" class="tryit"
+					<form id="{{ endpoint.endpoint | slugify: 'ascii' }}form" class="tryit"
 						action="{{endpoint.endpoint}}" data-method="{{endpoint.method}}"
-						data-slug="{{ endpoint.endpoint | slugify "ascii" }}">
+						data-slug="{{ endpoint.endpoint | slugify: 'ascii' }}">
 						{% if endpoint.fields %}
 						{% for field in endpoint.fields %}
 						<div class="form-group row">
@@ -189,10 +189,10 @@
 						{% endif %}
 					</form>
 					<hr>
-					<p class="hidden centered" id="{{ endpoint.endpoint | slugify "ascii" }}loading"><i
+					<p class="hidden centered" id="{{ endpoint.endpoint | slugify: 'ascii' }}loading"><i
 							class="fas fa-circle-notch fa-spin"></i> Sending request...</p>
-					<pre id="{{ endpoint.endpoint | slugify "ascii" }}resultsContainer"
-						class="hidden"><code class="json" id="{{ endpoint.endpoint | slugify "ascii" }}results"></code></pre>
+					<pre id="{{ endpoint.endpoint | slugify: 'ascii' }}resultsContainer"
+						class="hidden"><code class="json" id="{{ endpoint.endpoint | slugify: 'ascii' }}results"></code></pre>
 				</div>
 				{% endif %}
 				{% endfor %}
