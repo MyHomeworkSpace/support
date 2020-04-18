@@ -34,19 +34,24 @@ Some events may contain more data than just the name, start, and end. This is re
 
 While a given tag may not be present on all events, if it is present, it is guaranteed to be the correct type. For example, the "building name" tag will, if present, always be a string. See the sample response below for more examples. A full list of tags is below:
 
-| name | numeric value |
-| ---- | ------------- |
-| Reserved for future use | 0 |
-| Description | 1 |
-| Homework | 2 |
-| Term ID | 3 |
-| Class ID | 4 |
-| Owner ID | 5 |
-| Owner name | 6 |
-| Day number | 7 |
-| Block | 8 |
-| Building name | 9 |
-| Room number | 10 |
+| name | numeric value | description |
+| ---- | ------------- | ----------- |
+| Reserved for future use | 0 | (reserved) |
+| Description | 1 | string: A description associated with the event. |
+| Homework | 2 | object: A homework item associated with the event. |
+| Term ID | 3 | int: The Term ID associated with the event. Currently only used by the schedule provider for The Dalton School. |
+| Class ID | 4 | int: The Class ID associated with the event. Currently only used by the schedule provider for The Dalton School. |
+| Owner ID | 5 | int: The ID of the event's owner, such as a class's instructor. |
+| Owner name | 6 | string: The name of the event's owner, such as a class's instructor. |
+| Day number | 7 | int: The day number associated with the event. Currently only used by the schedule provider for The Dalton School. |
+| Block | 8 | string: The scheduling block or period associated with the event. |
+| Building name | 9 | string: The building name of the event. |
+| Room number | 10 | string: The room number of the event. |
+| Location | 11 | string: The location of the event. |
+| Read-only | 12 | boolean: If true, this event cannot be edited directly. It may still be possible to cancel the event or apply certain modifications. |
+| Short name | 13 | string: A short name of the event, suitable for display in a week or month view. |
+| Actions | 14 | object[]: Actions associated with the event, such as relevant external links. |
+| Cancelled | 15 | boolean: If true, this event has been marked as cancelled, and should be displayed as such. |
 
 ### Sample Response
 Due to the length of this snippet, it has been collapsed. Click “Expand code” to expand it.
