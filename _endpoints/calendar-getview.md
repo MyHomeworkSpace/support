@@ -52,6 +52,7 @@ While a given tag may not be present on all events, if it is present, it is guar
 | Short name | 13 | string: A short name of the event, suitable for display in a week or month view. |
 | Actions | 14 | object[]: Actions associated with the event, such as relevant external links. |
 | Cancelled | 15 | boolean: If true, this event has been marked as cancelled, and should be displayed as such. |
+| Cancelable | 16 | boolean: If true, this event can be cancelled by the user. |
 
 ### Sample Response
 Due to the length of this snippet, it has been collapsed. Click “Expand code” to expand it.
