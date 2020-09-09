@@ -47,10 +47,10 @@ We collect additional information if you link your school account to MyHomeworkS
     * This information is not saved. We use it to log in as you, and immediatly remove this information from our servers.
 * Your full name, username (or "NetID" at some institutions), student ID number, and graduating class year.
     * We use this information to help you identify the account you have linked. We also use it to help resolve customer service issues with your explicit permission.
-    * Depending on what school you link, we may collect less information.
+    * Depending on what school you link we may collect less information, but never more. If you require more information about what information we collect at a specific school, please contact us at [hello@myhomework.space](mailto:hello@myhomework.space).
 * Your schedule information
     * This includes the classes that you are taking, the names of the instructors of those classes, and the times that they meet.
-    * Depending on what school you link, we may collect less infomration.
+    * Depending on what school you link we may collect less information, but never more. If you require more information about what information we collect at a specific school, please contact us at [hello@myhomework.space](mailto:hello@myhomework.space).
 
 ---
 Third party applications may request access to your account. In the event that they do, you will be brought to a MyHomeworkSpace page explaining what information the application is requesting to access. You will then have the option to either grant access, or deny access. If you grant access, then later change your mind, you may revoke access by signing into MyHomeworkSpace, and selecting "Settings," then "Applications," then "Revoke Access." MyHomeworkSpace cannot control what these applications do with your data, and therefore cannot be held responsible for data granted to external applications.
