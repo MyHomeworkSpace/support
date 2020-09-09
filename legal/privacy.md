@@ -2,7 +2,7 @@
 layout: minimal
 title: MyHomeworkSpace Privacy Policy
 icon: fas fa-lock
-last_updated: January 5th, 2020
+last_updated: September 9th, 2020
 ---
 
 We respect your privacy. This policy outlines what information we collect, why we collect it, and where it goes. We never sell or market any of it, don’t worry!
