@@ -13,7 +13,7 @@ fields:
     required: true
   - name: words
     type: string
-    description: Words that can be used in tag (seperate multiple with spaces)
+    description: Words that can be used in tag (separate multiple with spaces)
     required: true
   - name: isTimedEvent
     type: 1 or 0

@@ -27,5 +27,5 @@ The sample above would be parsed as:
 2. Click <button class="btn btn-sm btn-light"><i class="fa fa-cogs"></i> Settings</button>. The settings page will open.
 3. Click <span class="text-primary">Homework</span>
 4. Scroll down to the "Add Custom Tag" section.
-5. Select a color from the dropdown, and type the name of your tag into the box to the right of the dropdown. If you want to add multiple tags of the same color, you can seperate them with spaces.
+5. Select a color from the dropdown, and type the name of your tag into the box to the right of the dropdown. If you want to add multiple tags of the same color, you can separate them with spaces.
 6. Click <button class="btn btn-sm btn-light">Add</button>. To see your changes, reload the page using the "reload" button in your browser. It usually looks like this: <i class="fas fa-redo"></i>, though it can vary from browser to browser.
