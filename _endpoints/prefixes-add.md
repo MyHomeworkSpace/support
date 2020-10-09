@@ -12,12 +12,12 @@ fields:
     description: Background color in tag
     required: true
   - name: words
-    type: string
-    description: Words that can be used in tag (separate multiple with spaces)
+    type: JSON array of strings
+    description: Words to be used be used as prefixes
     required: true
-  - name: isTimedEvent
-    type: 1 or 0
-    description: 1 if the event is timed (like a quiz, test, or lab) or 0 if the event is not timed (like a homework or take home test)
+  - name: timedEvent
+    type: bool
+    description: true if the event is timed (like a quiz, test, or lab) or false if the event is not timed (like a homework or take home test)
     required: true
 ---
 
