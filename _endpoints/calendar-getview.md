@@ -54,6 +54,8 @@ While a given tag may not be present on all events, if it is present, it is guar
 | Cancelled | 15 | boolean: If true, this event has been marked as cancelled, and should be displayed as such. |
 | Cancelable | 16 | boolean: If true, this event can be cancelled by the user. |
 | Section | 17 | string: The class section. |
+| Original start | 18 | int: (only for recurring events) The start time of the original event. |
+| Original end | 19 | int: (only for recurring events) The end time of the original event. |
 
 ### Sample Response
 Due to the length of this snippet, it has been collapsed. Click “Expand code” to expand it.
