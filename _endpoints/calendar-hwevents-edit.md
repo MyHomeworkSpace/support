@@ -9,7 +9,7 @@ fields:
     required: true
   - name: homeworkId
     type: integer
-    description: Updated ID number of homework cooresponding to event
+    description: Updated ID number of homework corresponding to event
     required: true
   - name: start
     type: datetime (ISO8601)

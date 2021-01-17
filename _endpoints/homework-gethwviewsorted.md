@@ -5,7 +5,7 @@ fields:
   - name: showToday
     type: '"true" or "false"'
     description: Determines if events due the current day are in the overdue or today column
-    required: dalse
+    required: false
 ---
 
 Gets a sorted version of Homework

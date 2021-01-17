@@ -33,7 +33,7 @@ fields:
     required: false
   - name: recurInterval
     type: integer
-    description: Sets the interval between two occurences of the same event 
+    description: Sets the interval between two occurrences of the same event
     required: false
   - name: recurUntil
     type: date (ISO8601)
