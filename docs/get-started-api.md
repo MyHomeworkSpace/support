@@ -2,7 +2,7 @@
 layout: docs
 title: Getting Started with the MyHomeworkSpace Public API
 icon: fas fa-code
-contributors: ["willbarkoff"]
+contributors: ["willbarkoff", "thatoddmailbox"]
 description: Learn how to use the MyHomeworkSpace API
 mermaid: true
 ---

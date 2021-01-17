@@ -2,7 +2,7 @@
 layout: docs
 title: Getting Started
 icon: far fa-smile
-contributors: ["willbarkoff"]
+contributors: ["willbarkoff", "thatoddmailbox"]
 description: Get started with MyHomeworkSpace
 ---
 

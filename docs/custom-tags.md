@@ -2,7 +2,7 @@
 layout: docs
 title: About Custom Tags
 icon: fas fa-tag
-contributors: ["willbarkoff"]
+contributors: ["willbarkoff", "thatoddmailbox"]
 description: Learn about custom tags, and how to use them.
 ---
 
