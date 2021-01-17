@@ -11,7 +11,7 @@ The MyHomeworkSpace public API provides a method of programmatically accessing a
 
 ## Requesting API Access
 
-API Access is not yet automated. To get a Client ID, you can reach out to us by emailing [hello@myhomework.space](mailto:hello@myhomework.space), or using the feedback buttons in MyHomeworkSpace. In your request, make sure to include a valid origin (for CORS purposes), as well as a valid callback url.
+API Access is not yet automated. To get a Client ID, you can reach out to us by emailing [hello@myhomework.space](mailto:hello@myhomework.space), or using the feedback buttons in MyHomeworkSpace. In your request, make sure to include a valid origin (for CORS purposes), as well as a valid callback URL.
 
 If you need to make any changes to this information, feel free to reach out to us.
 
