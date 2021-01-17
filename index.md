@@ -13,4 +13,4 @@ announcement-header: Introducing the MyHomeworkSpace Public API # What do you wa
 
 ## Announcement content goes below these three dashes:
 ---
-[Get Started](/docs/get-started-api) with the MyHomeworkSpace API, read the [documentation](/apireference.html), or try it out yourself with our [interactive reference](/apireference.html) that require no installation or environmental setup.
+[Get Started](/docs/get-started-api) with the MyHomeworkSpace API, read the [documentation](/apireference), or try it out yourself with our [interactive reference](/apireference) that require no installation or environmental setup.

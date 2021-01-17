@@ -15,7 +15,7 @@ API Access is not yet automated. To get a Client ID, you can reach out to us by 
 
 If you need to make any changes to this information, feel free to reach out to us.
 
-If you just want to try out the API, without building a specific application, you can use the "Try it out" sections of the [API Reference](/apireference.html), which handles all authentication for you.
+If you just want to try out the API, without building a specific application, you can use the "Try it out" sections of the [API Reference](/apireference), which handles all authentication for you.
 
 ## Authentication flow
 
@@ -29,7 +29,7 @@ When an app is registered for the API, it is given a Client ID. This unique code
 </div>
 
 ## Endpoints
-All endpoints are listed in the [API Reference](/apireference.html). Click on any endpoint to view more details about it.
+All endpoints are listed in the [API Reference](/apireference). Click on any endpoint to view more details about it.
 <ul>
 	{% for endpoint in site.endpoints %}
 	<li>

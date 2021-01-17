@@ -7,8 +7,8 @@ hidden: true
 
 ## MyHomeworkSpace
 
-* [Privacy Policy](./privacy.html)
+* [Privacy Policy](./privacy)
 
 ## DaltonTab
 
-* [Privacy Policy](./daltontab-privacy.html)
+* [Privacy Policy](./daltontab-privacy)
