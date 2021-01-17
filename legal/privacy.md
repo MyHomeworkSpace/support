@@ -85,7 +85,7 @@ Changed "schedules.dalton.org" to "dalton.myschoolapp.com" [See this revision](h
 Added information about analytical information collected. [See this revision](https://git.io/JepDx)
 
 **May 15th, 2018**
-Fix some typos, thanks [@robotxlabs](https://github.com/robotxlabs). [See this revision](https://git.io/JepDh)
+Fix some typos, thanks [@amazansky](https://github.com/amazansky). [See this revision](https://git.io/JepDh)
 
 **February 7th, 2019**
 Added information about screenshots included in feedback submissions. [See this revision](https://git.io/Jepye)
