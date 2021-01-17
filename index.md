@@ -2,6 +2,7 @@
 # Leave all of this alone:
 layout: home
 title: Home
+hidden: true
 description: Homepage
 icon: fas fa-home
 

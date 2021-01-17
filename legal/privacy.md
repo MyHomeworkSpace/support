@@ -2,6 +2,7 @@
 layout: minimal
 title: MyHomeworkSpace Privacy Policy
 icon: fas fa-lock
+hidden: true
 last_updated: September 9th, 2020
 ---
 
