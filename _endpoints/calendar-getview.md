@@ -56,6 +56,7 @@ While a given tag may not be present on all events, if it is present, it is guar
 | Section | 17 | string: The class section. |
 | Original start | 18 | int: (only for recurring events) The start time of the original event. |
 | Original end | 19 | int: (only for recurring events) The end time of the original event. |
+| Hide building name | 20 | boolean: If true, the schedule provider is suggesting that the building name be hidden from certain calendar views. Currently only used by the schedule provider for The Dalton School, where almost all classes happen in the same building. |
 
 ### Sample Response
 Due to the length of this snippet, it has been collapsed. Click “Expand code” to expand it.
