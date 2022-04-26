@@ -74,28 +74,28 @@ As always, thank you for using MyHomeworkSpace!
 If you require access to an older version of our Privacy Policy, please do not hesitate to contact us at [hello@myhomework.space](mailto:hello@myhomework.space).
 
 **January 4th, 2017**
-Added Original Policy. [See this revision](https://git.io/JepD5)
+Added Original Policy. [See this revision](https://github.com/MyHomeworkSpace/legal/blob/c89ca68b9eca33bcc421a6b1cecab70c09972c0f/_posts/2017-01-04-privacy.md)
 
 **April 24th, 2017**
-Added information about third party applications. [See this revision](https://git.io/JepDF)
+Added information about third party applications. [See this revision](https://github.com/MyHomeworkSpace/legal/blob/38cce9610f18a56aaf38a64bde083c2ec7aea6ce/_posts/2017-04-24-privacy.md)
 
 **October 27th, 2017**
-Changed "schedules.dalton.org" to "dalton.myschoolapp.com" [See this revision](https://git.io/JepDb)
+Changed "schedules.dalton.org" to "dalton.myschoolapp.com" [See this revision](https://github.com/MyHomeworkSpace/legal/blob/348807245d05ba7b40c7381464139c77239441e6/_posts/2017-10-27-privacy.md)
 
 **May 5th, 2018**
-Added information about analytical information collected. [See this revision](https://git.io/JepDx)
+Added information about analytical information collected. [See this revision](https://github.com/MyHomeworkSpace/legal/blob/b255170a36c241abf70e2effbf0ce4310a6a9a95/_posts/2018-05-05-privacy.md)
 
 **May 15th, 2018**
-Fix some typos, thanks [@amazansky](https://github.com/amazansky). [See this revision](https://git.io/JepDh)
+Fix some typos, thanks [@amazansky](https://github.com/amazansky). [See this revision](https://github.com/MyHomeworkSpace/legal/blob/3b6a6ec305fa22ae1628cf55d780c97844c42f23/_posts/2018-05-15-privacy.md)
 
 **February 7th, 2019**
-Added information about screenshots included in feedback submissions. [See this revision](https://git.io/Jepye)
+Added information about screenshots included in feedback submissions. [See this revision](https://github.com/MyHomeworkSpace/legal/blob/3fed5bb589aafccb563756847dd1475db4750154/_posts/2019-02-07-privacy.md)
 
 **January 3rd, 2020**
-Added information about linking school accounts. [See this revision](https://git.io/JehfN)
+Added information about linking school accounts. [See this revision](https://github.com/MyHomeworkSpace/support/blob/68d15cf985212b55303c22d037e290cbccec8549/legal/privacy.md)
 
 **January 5th, 2020**
-Corrected a typo.  [See this revision](https://git.io/JUcFz)
+Corrected a typo.  [See this revision](https://github.com/MyHomeworkSpace/support/blob/c45ed80feb193a00a1fc4821e005c00a57174cb3/legal/privacy.md)
 
 **September 9th, 2020**
 Added additional information about data collected when linking school accounts.
