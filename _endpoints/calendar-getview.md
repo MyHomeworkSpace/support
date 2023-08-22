@@ -58,6 +58,10 @@ While a given tag may not be present on all events, if it is present, it is guar
 | Original end | 19 | int: (only for recurring events) The end time of the original event. |
 | Hide building name | 20 | boolean: If true, the schedule provider is suggesting that the building name be hidden from certain calendar views. Currently only used by the schedule provider for The Dalton School, where almost all classes happen in the same building. |
 | Homework class | 21 | object: If the event is associated with a homework item, this is set to the class associated with the homework item. |
+| Instance start | 22 | int: The start time of the instance of this event. This is mostly the same as the event's `start` field; however, if an event spans multiple days, it will be broken into chunks with limited `start` and `end` values. (and you can then look at this tag to determine the full span of the event)  |
+| Instance end | 23 | int: Same as above, but for the end of the instance of the event. |
+| Is continuation | 24 | boolean: If true, this event is a continuation of the same event from the previous day. |
+| Continues | 25 | boolean: If true, this event continues into the next day. |
 
 ### Sample Response
 Due to the length of this snippet, it has been collapsed. Click “Expand code” to expand it.
