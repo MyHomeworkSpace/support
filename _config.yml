@@ -25,7 +25,7 @@ collections:
 
 # Build settings
 markdown: kramdown
-url: help.myhomework.space
+url: support.myhomework.space
 
 algolia:
   application_id: QF9EIEIPVJ
