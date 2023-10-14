@@ -34,8 +34,10 @@ algolia:
     - index.html
     - index.md
     - _endpoints/*
+    - legal/*
     - 404.md
-    - embeddedsearch.md
+    - apireference.md
+    - embedded-search.md
     - search.md
     - CNAME
 
