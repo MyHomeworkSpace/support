@@ -21,7 +21,7 @@ $(() => {
             container: '#hits',
             templates: {
                 empty: 'No results could be found.',
-                item: '<h3><a href="{{url}}">{{{_highlightResult.title.value}}}</a></h3><p>{{{description}}}'
+                item: '<h3><a href="{{url}}">{{{_highlightResult.title.value}}}</a></h3><p>{{{description}}}</p>'
             },
             escapeHits: true,
         })
