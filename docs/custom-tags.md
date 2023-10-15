@@ -6,7 +6,7 @@ contributors: ["willbarkoff", "thatoddmailbox"]
 description: Learn about custom tags, and how to use them.
 ---
 
-MyHomeworkSpace supports custom tags, or assignment types. By default, are custom tags are <span class="tag" style="background-color: #ffd3bd">pink</span>.
+MyHomeworkSpace supports custom tags, or assignment types. By default, all custom tags are <span class="tag" style="background-color: #ffd3bd">pink</span>.
 
 ## How to use custom tags
 You can use custom tags with Quick Add, or with the default add homework dialog.
