@@ -28,7 +28,7 @@ markdown: kramdown
 url: support.myhomework.space
 
 algolia:
-  application_id: QF9EIEIPVJ
+  application_id: P9JHDU8QGZ
   index_name:     site # You can replace that with whatever name you want
   files_to_exclude:
     - index.html

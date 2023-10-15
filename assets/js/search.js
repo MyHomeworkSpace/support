@@ -10,8 +10,8 @@ $(() => {
     });
 
     const search = instantsearch({
-        appId: 'QF9EIEIPVJ',
-        apiKey: '850274baea92c3bf75c0f515e519bbf2',
+        appId: 'P9JHDU8QGZ',
+        apiKey: '23e64834610c20f4c4b37201da51bd13',
         indexName: 'site',
         routing: true
     });
